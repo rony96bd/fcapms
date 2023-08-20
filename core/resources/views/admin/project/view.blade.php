@@ -10,6 +10,7 @@
                                 <div class="col-sm-3">
                                     <p class="mb-0 font-weight-bold">Project Status</p>
                                 </div>
+
                                 <div class="col-sm-9">
                                     @if ($project->status == 1)
                                         <span class="badge badge--success font-weight-bold">@lang('Project is Actived')</span>
