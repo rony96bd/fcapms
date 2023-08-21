@@ -184,7 +184,7 @@
 
                                             <a class="publisher-btn" href="#" data-abc="true"><i
                                                     class="fa fa-smile"></i></a>
-                                            <a class="publisher-btn text-info" href="#" data-abc="true"><i
+                                            <a class="publisher-btn text-info" onclick="this.closest('form').submit();return false;" data-abc="true"><i
                                                     class="fa fa-paper-plane"></i></a>
                                         </div>
                                     </form>
