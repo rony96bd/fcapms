@@ -94,8 +94,6 @@
                                                 alt="...">
                                             <div class="media-body">
                                                 <p>Hi</p>
-                                                <p>How are you ...???</p>
-                                                <p>What are you doing tomorrow?<br> Can we come up a bar?</p>
                                                 <p class="meta"><time datetime="2018">23:58</time></p>
                                             </div>
                                         </div>
@@ -105,8 +103,6 @@
                                         <div class="media media-chat media-chat-reverse">
                                             <div class="media-body">
                                                 <p>Hiii, I'm good.</p>
-                                                <p>How are you doing?</p>
-                                                <p>Long time no see! Tomorrow office. will be free on sunday.</p>
                                                 <p class="meta"><time datetime="2018">00:06</time></p>
                                             </div>
                                         </div>
