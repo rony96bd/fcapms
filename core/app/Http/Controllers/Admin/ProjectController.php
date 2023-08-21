@@ -9,6 +9,7 @@ use App\Models\Agent;
 use App\Models\Message;
 use App\Models\Project;
 use App\Models\Admin;
+use App\Models\User;
 use App\Rules\FileTypeValidate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
