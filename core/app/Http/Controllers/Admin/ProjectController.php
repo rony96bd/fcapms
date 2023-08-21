@@ -184,7 +184,12 @@ class ProjectController extends Controller
     {
         $pageTitle = "Project Details";
         $project = Project::findOrFail($id);
-        return view('admin.project.view', compact('pageTitle', 'project'));
+        $users = User::latest()
+        ->where('project_id', $id)
+        ->paginate(getPaginate());
+        $admins = Admin::latest()->paginate(getPaginate());
+
+        return view('admin.project.view', compact('pageTitle', 'project', 'users', 'admins'));
     }
 
     public function delete($files)
