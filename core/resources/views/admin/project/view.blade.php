@@ -107,42 +107,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="media media-chat">
-                                            <img class="avatar"
-                                                src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                alt="...">
-                                            <div class="media-body">
-                                                <p>Okay</p>
-                                                <p>We will go on sunday? </p>
-                                                <p class="meta"><time datetime="2018">00:07</time></p>
-                                            </div>
-                                        </div>
 
-                                        <div class="media media-chat media-chat-reverse">
-                                            <div class="media-body">
-                                                <p>That's awesome!</p>
-                                                <p>I will meet you Sandon Square sharp at 10 AM</p>
-                                                <p>Is that okay?</p>
-                                                <p class="meta"><time datetime="2018">00:09</time></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="media media-chat">
-                                            <img class="avatar"
-                                                src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                alt="...">
-                                            <div class="media-body">
-                                                <p>Okay i will meet you on Sandon Square </p>
-                                                <p class="meta"><time datetime="2018">00:10</time></p>
-                                            </div>
-                                        </div>
-
-                                        <div class="media media-chat media-chat-reverse">
-                                            <div class="media-body">
-                                                <p>Do you have pictures of Matley Marriage?</p>
-                                                <p class="meta"><time datetime="2018">00:10</time></p>
-                                            </div>
-                                        </div>
 
                                         <div class="media media-chat">
                                             <img class="avatar"
