@@ -19,5 +19,4 @@ class Message extends Authenticatable
      * @var array
      */
     protected $guarded = ['id'];
-
 }

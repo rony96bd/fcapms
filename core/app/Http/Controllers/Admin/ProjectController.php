@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Blood;
 use App\Models\City;
 use App\Models\Agent;
+use App\Models\Message;
 use App\Models\Project;
 use App\Rules\FileTypeValidate;
 use Illuminate\Http\Request;
@@ -131,7 +132,14 @@ class ProjectController extends Controller
 
     public function message (Request $request)
     {
-        
+        $request->validate([
+            'message' = 'required'
+        ]);
+        $message = new Message();
+        $message->message = $request->message;
+        $message->save();
+        $notify[] = ['success', 'Message Send Successfully'];
+        return back()->withNotify($notify);
     }
 
     public function store(Request $request)
@@ -185,7 +193,7 @@ class ProjectController extends Controller
     {
         $path = imagePath()['file']['path'];
         $deletefile = File::delete($path.$files);
-        
+
         $notify[] = ['success', 'File Deleted Successfuly.'];
         return back()->withNotify($notify);
     }
