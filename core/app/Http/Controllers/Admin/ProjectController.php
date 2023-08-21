@@ -136,6 +136,9 @@ class ProjectController extends Controller
     {
         $request->validate(['message' => 'required']);
         $message = new Message();
+
+        $message->project_id = $request->project_id;
+        $message->user_id = $request->user_id;
         $message->message = $request->message;
         $message->save();
         $notify[] = ['success', 'Message Send Successfully'];
