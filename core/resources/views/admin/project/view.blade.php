@@ -180,6 +180,7 @@
                                             <img class="avatar avatar-xs"
                                                 src="https://img.icons8.com/color/36/000000/administrator-male.png"
                                                 alt="...">
+                                                <input type="number" name="project_id" hidden value="{{ __($project->id) }}">
                                             <input class="publisher-input" type="text" name="message" placeholder="Write something">
 
                                             <a class="publisher-btn" href="#" data-abc="true"><i
