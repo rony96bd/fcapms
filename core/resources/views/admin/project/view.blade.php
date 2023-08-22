@@ -93,11 +93,12 @@
 
                                         <div class="media media-chat media-chat-reverse">
                                             <div class="media-body">
+                                                <p>
                                                 @forelse ($messages as $message)
                                                     {{ __($message->message) }}
                                                 @empty
                                                 @endforelse
-
+                                                </p>
                                                 <p class="meta" style="color: #48b0f7"><time datetime="2018">00:06</time>
                                                 </p>
                                             </div>
