@@ -116,7 +116,7 @@
                                         @empty
                                         @endforelse
 
-                                        {{-- <div class="media media-chat">
+                                        <div class="media media-chat">
                                             <img class="avatar"
                                                 src="https://img.icons8.com/color/36/000000/administrator-male.png"
                                                 alt="...">
@@ -124,7 +124,7 @@
                                                 <p>Sorry I don't have. i changed my phone.</p>
                                                 <p class="meta"><time datetime="2018">00:12</time></p>
                                             </div>
-                                        </div> --}}
+                                        </div>
 
                                         <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
                                             <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
