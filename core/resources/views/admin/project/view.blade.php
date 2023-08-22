@@ -86,19 +86,6 @@
                                     <div class="card-header">
                                         <h4 class="card-title"><strong>Messages</strong></h4>
                                     </div>
-                                    <div class="ps-container ps-theme-default ps-active-y" id="chat-content"
-                                        style="overflow-y: scroll !important; height:400px !important;">
-                                        <div class="media media-chat">
-                                            <img class="avatar"
-                                                src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                alt="...">
-                                            <div class="media-body">
-                                                <p>Hi</p>
-                                                <p class="meta"><time datetime="2018">23:58</time></p>
-                                            </div>
-                                        </div>
-
-                                        {{-- <div class="media media-meta-day">Today</div> --}}
 
                                         <div class="media media-chat media-chat-reverse">
                                             <div class="media-body">
