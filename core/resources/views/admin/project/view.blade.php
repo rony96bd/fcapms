@@ -100,18 +100,20 @@
                                                 }
 
                                             @endphp
-
+                                            <div class="media media-chat {{ $reverse }}">
+                                                <div class="media-body">
+                                                    <p>
+                                                        {{ __($message->message) }}
+                                                    </p>
+                                                    <p class="meta" style="color: #48b0f7"><time
+                                                            datetime="2018">00:06</time>
+                                                    </p>
+                                                </div>
+                                            </div>
                                         @empty
                                         @endforelse
-                                        <div class="media media-chat {{$reverse}}">
-                                            <div class="media-body">
-                                                <p>
-                                                    {{ __($message->message) }}
-                                                </p>
-                                                <p class="meta" style="color: #48b0f7"><time datetime="2018">00:06</time>
-                                                </p>
-                                            </div>
-                                        </div>
+
+
 
 
                                         <div class="media media-chat">
