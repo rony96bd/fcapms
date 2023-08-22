@@ -92,7 +92,7 @@
                                         {{-- <div class="media media-meta-day">Today</div> --}}
 
                                         @forelse ($messages as $message)
-                                        {{-- @php
+                                            {{-- @php
                                          if ($message->user_id == 'admin_1') {
                                             $reverse = 'media-chat-reverse';
                                          } else {
@@ -100,20 +100,19 @@
                                          }
 
                                         @endphp --}}
-                                        {{ __($message->message) }}
-
-                                            <div class="media media-chat media-chat-reverse">
-                                                <div class="media-body">
-                                                    <p>
-
-                                                    </p>
-                                                    <p class="meta" style="color: #48b0f7"><time
-                                                            datetime="2018">00:06</time>
-                                                    </p>
-                                                </div>
-                                            </div>
+                                            {{ __($message->message) }}
                                         @empty
                                         @endforelse
+                                        <div class="media media-chat media-chat-reverse">
+                                            <div class="media-body">
+                                                <p>
+
+                                                </p>
+                                                <p class="meta" style="color: #48b0f7"><time datetime="2018">00:06</time>
+                                                </p>
+                                            </div>
+                                        </div>
+
 
                                         <div class="media media-chat">
                                             <img class="avatar"
