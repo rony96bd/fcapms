@@ -92,20 +92,19 @@
                                         {{-- <div class="media media-meta-day">Today</div> --}}
 
                                         @forelse ($messages as $message)
-                                        @php
+                                        {{-- @php
                                          if ($message->user_id == 'admin_1') {
                                             $reverse = 'media-chat-reverse';
                                          } else {
                                             $reverse = '';
                                          }
 
-                                        @endphp
+                                        @endphp --}}
+                                        {{ __($message->message) }}
 
-                                            <div class="media media-chat {{ $reverse }}">
+                                            <div class="media media-chat media-chat-reverse">
                                                 <div class="media-body">
                                                     <p>
-
-                                                        {{ __($message->message) }}
 
                                                     </p>
                                                     <p class="meta" style="color: #48b0f7"><time
