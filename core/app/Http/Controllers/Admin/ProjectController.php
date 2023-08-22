@@ -193,8 +193,9 @@ class ProjectController extends Controller
         ->where('project_id', $id)
         ->paginate(getPaginate());
         $admins = Admin::latest()->paginate(getPaginate());
-
-        return view('admin.project.view', compact('pageTitle', 'project', 'users', 'admins'));
+        $message = Message::where('project_id', $id)->get();
+        dd($message->message);
+        return view('admin.project.view', compact('pageTitle', 'project', 'users', 'admins', 'message'));
     }
 
     public function delete($files)
