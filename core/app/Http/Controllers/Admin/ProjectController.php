@@ -194,7 +194,7 @@ class ProjectController extends Controller
         ->paginate(getPaginate());
         $admins = Admin::latest()->paginate(getPaginate());
         $message = Message::where('project_id', $id)->get();
-        dd($message);
+
         return view('admin.project.view', compact('pageTitle', 'project', 'users', 'admins', 'message'));
     }
 
