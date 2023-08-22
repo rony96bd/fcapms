@@ -90,19 +90,21 @@
                                         style="overflow-y: scroll !important; height:400px !important;">
 
                                         {{-- <div class="media media-meta-day">Today</div> --}}
+                                        @forelse ($messages as $message)
+                                            <div class="media media-chat media-chat-reverse">
+                                                <div class="media-body">
+                                                    <p>
 
-                                        <div class="media media-chat media-chat-reverse">
-                                            <div class="media-body">
-                                                <p>
-                                                @forelse ($messages as $message)
-                                                    {{ __($message->message) }}
-                                                @empty
-                                                @endforelse
-                                                </p>
-                                                <p class="meta" style="color: #48b0f7"><time datetime="2018">00:06</time>
-                                                </p>
+                                                        {{ __($message->message) }}
+
+                                                    </p>
+                                                    <p class="meta" style="color: #48b0f7"><time
+                                                            datetime="2018">00:06</time>
+                                                    </p>
+                                                </div>
                                             </div>
-                                        </div>
+                                        @empty
+                                        @endforelse
 
                                         <div class="media media-chat">
                                             <img class="avatar"
@@ -150,7 +152,6 @@
             </div>
         </div>
     </section>
-
 @endsection
 @push('breadcrumb-plugins')
     <a href="{{ route('admin.project.index') }}" class="btn btn-sm btn--primary box--shadow1 text--small"><i
