@@ -189,13 +189,12 @@ class ProjectController extends Controller
     {
         $pageTitle = "Project Details";
         $project = Project::findOrFail($id);
-        // $projects = Project::latest()->paginate(getPaginate());
+        $projects = Project::latest()->paginate(getPaginate());
         $users = User::latest()
         ->where('project_id', $id)
         ->paginate(getPaginate());
         $admins = Admin::latest()->paginate(getPaginate());
         $messages = Message::latest()->paginate(getPaginate());
-        dd($messages);
         return view('admin.project.view', compact('pageTitle', 'project', 'users', 'admins', 'messages'));
     }
 

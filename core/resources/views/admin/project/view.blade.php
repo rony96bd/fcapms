@@ -93,9 +93,9 @@
 
                                         <div class="media media-chat media-chat-reverse">
                                             <div class="media-body">
-                                                @foreach($messages as $message)
+                                                {{-- @foreach($messages as $message)
                                                     <p>{{ __($messages->message) }}</p>
-                                                @endforeach
+                                                @endforeach --}}
 
                                                 <p class="meta" style="color: #48b0f7"><time datetime="2018">00:06</time>
                                                 </p>
@@ -148,6 +148,77 @@
             </div>
         </div>
     </section>
+    <table class="table table--light style--two">
+        <thead>
+            <tr>
+                <th>@lang('Project Name')</th>
+                <th>@lang('URL')</th>
+                <th>@lang('Username')</th>
+                <th>@lang('Password')</th>
+                <th>@lang('Status')</th>
+                <th>@lang('Action')</th>
+            </tr>
+        </thead>
+        <tbody>
+            @forelse($projects as $project)
+                <tr>
+                    <td data-label="@lang('Name - Profession')">
+                        <span>{{ __($project->project_name) }}</span><br>
+                    </td>
+                    <td data-label="@lang('URL')">
+                        <span>{{ __($project->url) }}</span><br>
+                    </td>
+                    <td data-label="@lang('Username')">
+                        <span>{{ __($project->username) }}</span><br>
+                    </td>
+                    <td data-label="@lang('Password')">
+                        <span>{{ __($project->password) }}</span><br>
+                    </td>
+                    <td data-label="@lang('Status')">
+                        @if ($project->status == 1)
+                            <span class="badge badge--success">@lang('Active')</span>
+                        @elseif($project->status == 2)
+                            <span class="badge badge--danger">@lang('Banned')</span>
+                        @else
+                            <span class="badge badge--primary">@lang('Pending')</span>
+                        @endif
+                    </td>
+
+                    <td data-label="@lang('Action')">
+                        @if ($project->status == 2)
+                            <a href="javascript:void(0)"
+                                class="icon-btn btn--success ml-1 approved" data-toggle="tooltip"
+                                data-original-title="@lang('Approve')"
+                                data-id="{{ $project->id }}"><i class="las la-check"></i></a>
+                        @elseif($project->status == 1)
+                            <a href="javascript:void(0)"
+                                class="icon-btn btn--danger ml-1 cancel" data-toggle="tooltip"
+                                data-original-title="@lang('Banned')"
+                                data-id="{{ $project->id }}"><i class="las la-times"></i></a>
+                        @elseif($project->status == 0)
+                            <a href="javascript:void(0)"
+                                class="icon-btn btn--success ml-1 approved" data-toggle="tooltip"
+                                data-original-title="@lang('Approve')"
+                                data-id="{{ $project->id }}"><i class="las la-check"></i></a>
+                            <a href="javascript:void(0)"
+                                class="icon-btn btn--danger ml-1 cancel" data-toggle="tooltip"
+                                data-original-title="@lang('Banned')"
+                                data-id="{{ $project->id }}"><i class="las la-times"></i></a>
+                        @endif
+                        <a href="{{ route('admin.project.edit', $project->id) }}"
+                            class="icon-btn btn--primary ml-1"><i class="las la-pen"></i></a>
+                        <a href="{{ route('admin.project.view', $project->id) }}"
+                            class="icon-btn btn--primary ml-1"><i class="las la-eye"></i></a>
+                    </td>
+                </tr>
+            @empty
+                <tr>
+                    <td class="text-muted text-center" colspan="100%">{{ __($emptyMessage) }}</td>
+                </tr>
+            @endforelse
+
+        </tbody>
+    </table>
 @endsection
 @push('breadcrumb-plugins')
     <a href="{{ route('admin.project.index') }}" class="btn btn-sm btn--primary box--shadow1 text--small"><i
