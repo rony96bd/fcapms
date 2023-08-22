@@ -148,6 +148,8 @@
             </div>
         </div>
     </section>
+    @forelse($projects as $project)
+
     <table class="table table--light style--two">
         <thead>
             <tr>
@@ -160,7 +162,12 @@
             </tr>
         </thead>
         <tbody>
-            @forelse($projects as $project)
+
+            @forelse ($messages as $message)
+                {{__($message->message)}}
+            @empty
+
+            @endforelse
                 <tr>
                     <td data-label="@lang('Name - Profession')">
                         <span>{{ __($project->project_name) }}</span><br>
