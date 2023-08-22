@@ -92,7 +92,7 @@
                                         {{-- <div class="media media-meta-day">Today</div> --}}
 
                                         @forelse ($messages as $message)
-                                        @if ($message->user_id == 'admin_'auth()->guard('admin')->user()->id )
+                                        @if ($message->user_id == 'admin_1' )
                                             $reverse = 'media-chat-reverse';
                                         @else
                                             $reverse = '';
