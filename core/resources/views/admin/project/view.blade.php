@@ -90,7 +90,13 @@
                                         style="overflow-y: scroll !important; height:400px !important;">
 
                                         {{-- <div class="media media-meta-day">Today</div> --}}
+
                                         @forelse ($messages as $message)
+                                        @if ($message->user_id == 'admin_'auth()->guard('admin')->user()->id )
+                                            $reverse = 'media-chat-reverse';
+                                        @else
+                                            $reverse = '';
+                                        @endif
                                             <div class="media media-chat media-chat-reverse">
                                                 <div class="media-body">
                                                     <p>
@@ -133,7 +139,7 @@
                                                 alt="...">
                                             <input type="number" name="project_id" hidden value="{{ __($project->id) }}">
                                             <input type="number" name="user_id" hidden
-                                                value="{{ auth()->guard('admin')->user()->id }}">
+                                                value="admin_{{ auth()->guard('admin')->user()->id }}">
                                             <input class="publisher-input" type="text" name="message"
                                                 placeholder="Write something">
 
