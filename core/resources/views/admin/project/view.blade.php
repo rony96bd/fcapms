@@ -77,85 +77,155 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-5">
-                    <div class="card">
-                        <div class="card-body pt-0">
-                            <!-- Chat ------------------------------------------------------------>
-                            <div class="page-content page-container" id="page-content">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="card-header">
-                                        <h4 class="card-title"><strong>Messages</strong></h4>
+                <section style="background-color: #eee;">
+                    <div class="container py-5">
+
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-10 col-lg-8 col-xl-6">
+
+                                <div class="card" id="chat2">
+                                    <div class="card-header d-flex justify-content-between align-items-center p-3">
+                                        <h5 class="mb-0">Chat</h5>
+                                        <button type="button" class="btn btn-primary btn-sm"
+                                            data-mdb-ripple-color="dark">Let's Chat
+                                            App</button>
                                     </div>
-                                    <div class="ps-container ps-theme-default ps-active-y" id="chat-content"
-                                        style="overflow-y: scroll !important; height:400px !important;">
-                                        <div class="media media-chat">
-                                            <img class="avatar"
-                                                src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                alt="...">
-                                            <div class="media-body">
-                                                <p>Hi</p>
-                                                <p class="meta"><time datetime="2018">23:58</time></p>
+                                    <div class="card-body" data-mdb-perfect-scrollbar="true"
+                                        style="position: relative; height: 400px">
+
+                                        <div class="d-flex flex-row justify-content-start">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                            <div>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">
+                                                    Hi</p>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">
+                                                    How are you ...???
+                                                </p>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">
+                                                    What are you doing
+                                                    tomorrow? Can we come up a bar?</p>
+                                                <p class="small ms-3 mb-3 rounded-3 text-muted">23:58</p>
                                             </div>
                                         </div>
 
-                                        {{-- <div class="media media-meta-day">Today</div> --}}
+                                        <div class="divider d-flex align-items-center mb-4">
+                                            <p class="text-center mx-3 mb-0" style="color: #a2aab7;">Today</p>
+                                        </div>
 
-                                        <div class="media media-chat media-chat-reverse">
-                                            <div class="media-body">
-                                                <p>Hiii, I'm good.</p>
-                                                <p class="meta"><time datetime="2018">00:06</time></p>
+                                        <div class="d-flex flex-row justify-content-end mb-4 pt-1">
+                                            <div>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Hiii, I'm
+                                                    good.</p>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">How are you
+                                                    doing?</p>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Long time no
+                                                    see! Tomorrow
+                                                    office. will
+                                                    be free on sunday.</p>
+                                                <p class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
+                                                    00:06</p>
+                                            </div>
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-start mb-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                            <div>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">
+                                                    Okay</p>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">
+                                                    We will go on
+                                                    Sunday?</p>
+                                                <p class="small ms-3 mb-3 rounded-3 text-muted">00:07</p>
                                             </div>
                                         </div>
 
+                                        <div class="d-flex flex-row justify-content-end mb-4">
+                                            <div>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">That's
+                                                    awesome!</p>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">I will meet
+                                                    you Sandon Square
+                                                    sharp at
+                                                    10 AM</p>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Is that okay?
+                                                </p>
+                                                <p class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
+                                                    00:09</p>
+                                            </div>
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                        </div>
 
-
-                                        <div class="media media-chat">
-                                            <img class="avatar"
-                                                src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                alt="...">
-                                            <div class="media-body">
-                                                <p>Sorry I don't have. i changed my phone.</p>
-                                                <p class="meta"><time datetime="2018">00:12</time></p>
+                                        <div class="d-flex flex-row justify-content-start mb-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                            <div>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">
+                                                    Okay i will meet
+                                                    you on
+                                                    Sandon Square</p>
+                                                <p class="small ms-3 mb-3 rounded-3 text-muted">00:11</p>
                                             </div>
                                         </div>
 
-                                        <div class="media media-chat media-chat-reverse">
-                                            <div class="media-body">
-                                                <p>Okay then see you on sunday!!</p>
-                                                <p class="meta"><time datetime="2018">00:12</time></p>
+                                        <div class="d-flex flex-row justify-content-end mb-4">
+                                            <div>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Do you have
+                                                    pictures of Matley
+                                                    Marriage?</p>
+                                                <p class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
+                                                    00:11</p>
+                                            </div>
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                        </div>
+
+                                        <div class="d-flex flex-row justify-content-start mb-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
+                                            <div>
+                                                <p class="small p-2 ms-3 mb-1 rounded-3"
+                                                    style="background-color: #f5f6f7;">Sorry I don't
+                                                    have. i
+                                                    changed my phone.</p>
+                                                <p class="small ms-3 mb-3 rounded-3 text-muted">00:13</p>
                                             </div>
                                         </div>
 
-                                        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-                                            <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-                                        </div>
-                                        <div class="ps-scrollbar-y-rail" style="top: 0px; height: 0px; right: 2px;">
-                                            <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 2px;">
+                                        <div class="d-flex flex-row justify-content-end">
+                                            <div>
+                                                <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Okay then
+                                                    see you on sunday!!
+                                                </p>
+                                                <p class="small me-3 mb-3 rounded-3 text-muted d-flex justify-content-end">
+                                                    00:15</p>
                                             </div>
+                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
+                                                alt="avatar 1" style="width: 45px; height: 100%;">
                                         </div>
+
                                     </div>
-                                    <form action="{{ route('admin.project.message') }}" method="POST"
-                                        enctype="multipart/form-data">
-                                        @csrf
-                                        <div class="publisher bt-1 border-light">
-                                            <img class="avatar avatar-xs"
-                                                src="https://img.icons8.com/color/36/000000/administrator-male.png"
-                                                alt="...">
-                                                <input type="number" name="project_id" hidden value="{{ __($project->id) }}">
-                                                <input type="number" name="user_id" hidden value="{{auth()->guard('admin')->user()->id}}">
-                                            <input class="publisher-input" type="text" name="message" placeholder="Write something">
-
-                                            <a class="publisher-btn" href="#" data-abc="true"><i
-                                                    class="fa fa-smile"></i></a>
-                                            <a class="publisher-btn text-info" onclick="this.closest('form').submit();return false;" data-abc="true"><i
-                                                    class="fa fa-paper-plane"></i></a>
-                                        </div>
-                                    </form>
+                                    <div
+                                        class="card-footer text-muted d-flex justify-content-start align-items-center p-3">
+                                        <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
+                                            alt="avatar 3" style="width: 40px; height: 100%;">
+                                        <input type="text" class="form-control form-control-lg"
+                                            id="exampleFormControlInput1" placeholder="Type message">
+                                        <a class="ms-1 text-muted" href="#!"><i class="fas fa-paperclip"></i></a>
+                                        <a class="ms-3 text-muted" href="#!"><i class="fas fa-smile"></i></a>
+                                        <a class="ms-3" href="#!"><i class="fas fa-paper-plane"></i></a>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
+
                     </div>
-                </div>
+                </section>
             </div>
         </div>
     </section>
