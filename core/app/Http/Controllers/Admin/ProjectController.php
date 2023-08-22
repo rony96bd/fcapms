@@ -194,7 +194,8 @@ class ProjectController extends Controller
         ->where('project_id', $id)
         ->paginate(getPaginate());
         $admins = Admin::latest()->paginate(getPaginate());
-        $messages = Message::orderBy('id')->get();
+        $orderBy = $form == "Ascending" ? "asc" : "desc";
+        $messages = Message::orderBy('id', $orderBy)->get();
         return view('admin.project.view', compact('pageTitle', 'project', 'projects', 'users', 'admins', 'messages'));
     }
 
