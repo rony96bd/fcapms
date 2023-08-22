@@ -89,15 +89,7 @@
                                     <div class="ps-container ps-theme-default ps-active-y" id="chat-content"
                                         style="overflow-y: scroll !important; height:400px !important;">
 
-
                                         {{-- <div class="media media-meta-day">Today</div> --}}
-
-                                        <div class="media media-chat media-chat-reverse">
-                                            <div class="media-body">
-                                                <p>Hiii, I'm good.</p>
-                                                <p class="meta"><time datetime="2018">00:06</time></p>
-                                            </div>
-                                        </div>
 
                                         <div class="media media-chat">
                                             <img class="avatar"
