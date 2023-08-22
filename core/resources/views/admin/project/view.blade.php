@@ -93,11 +93,12 @@
 
                                         <div class="media media-chat media-chat-reverse">
                                             <div class="media-body">
-                                                @foreach ($messages as $message)
+                                                @forelse($messages as $message)
                                                     <p>{{ __($messages->message) }}</p>
-                                                @endforeach
+                                                @endforelse
 
-                                                <p class="meta" style="color: #48b0f7"><time datetime="2018">00:06</time></p>
+                                                <p class="meta" style="color: #48b0f7"><time datetime="2018">00:06</time>
+                                                </p>
                                             </div>
                                         </div>
 
@@ -126,13 +127,16 @@
                                             <img class="avatar avatar-xs"
                                                 src="https://img.icons8.com/color/36/000000/administrator-male.png"
                                                 alt="...">
-                                                <input type="number" name="project_id" hidden value="{{ __($project->id) }}">
-                                                <input type="number" name="user_id" hidden value="{{auth()->guard('admin')->user()->id}}">
-                                            <input class="publisher-input" type="text" name="message" placeholder="Write something">
+                                            <input type="number" name="project_id" hidden value="{{ __($project->id) }}">
+                                            <input type="number" name="user_id" hidden
+                                                value="{{ auth()->guard('admin')->user()->id }}">
+                                            <input class="publisher-input" type="text" name="message"
+                                                placeholder="Write something">
 
                                             <a class="publisher-btn" href="#" data-abc="true"><i
                                                     class="fa fa-smile"></i></a>
-                                            <a class="publisher-btn text-info" onclick="this.closest('form').submit();return false;" data-abc="true"><i
+                                            <a class="publisher-btn text-info"
+                                                onclick="this.closest('form').submit();return false;" data-abc="true"><i
                                                     class="fa fa-paper-plane"></i></a>
                                         </div>
                                     </form>

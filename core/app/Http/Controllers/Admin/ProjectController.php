@@ -189,11 +189,12 @@ class ProjectController extends Controller
     {
         $pageTitle = "Project Details";
         $project = Project::findOrFail($id);
+        // $projects = Project::latest()->paginate(getPaginate());
         $users = User::latest()
         ->where('project_id', $id)
         ->paginate(getPaginate());
         $admins = Admin::latest()->paginate(getPaginate());
-        $messages = Message::where('project_id', $id)->select('id', 'message')->get();
+        $messages = Message::latest()->paginate(getPaginate());
 
         return view('admin.project.view', compact('pageTitle', 'project', 'users', 'admins', 'messages'));
     }
