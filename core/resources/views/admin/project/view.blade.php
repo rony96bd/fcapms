@@ -108,13 +108,6 @@
                                             </div>
                                         </div>
 
-                                        <div class="media media-chat media-chat-reverse">
-                                            <div class="media-body">
-                                                <p>Okay then see you on sunday!!</p>
-                                                <p class="meta"><time datetime="2018">00:12</time></p>
-                                            </div>
-                                        </div>
-
                                         <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
                                             <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
                                         </div>
