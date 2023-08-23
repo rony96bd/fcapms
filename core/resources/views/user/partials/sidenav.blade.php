@@ -20,64 +20,39 @@
                 </li>
 
                 <li class="sidebar-menu-item sidebar-dropdown">
-                    <a href="javascript:void(0)" class="{{ menuActive('user.donor*', 3) }}">
-                        <i class="menu-icon las la-user"></i>
-                        <span class="menu-title">@lang('Manage Students') </span>
-                        @if (0 < $pending_donor_count)
+                    <a href="javascript:void(0)" class="{{ menuActive('admin.agent*', 3) }}">
+                        <i class="menu-icon las la-user-tie"></i>
+                        <span class="menu-title">@lang('Manage Project') </span>
+                        @if (0 < $pending_agent_count)
                             <span class="menu-badge pill bg--primary ml-auto">
                                 <i class="fa fa-exclamation"></i>
                             </span>
                         @endif
                     </a>
-                    <div class="sidebar-submenu {{ menuActive('user.donor*', 2) }} ">
+                    <div class="sidebar-submenu {{ menuActive('admin.agent*', 2) }} ">
                         <ul>
-                            <li class="sidebar-menu-item {{ menuActive('user.donor.approved') }} ">
-                                <a href="{{ route('user.donor.approved') }}" class="nav-link">
+                            <li class="sidebar-menu-item {{ menuActive('admin.project.approved') }} ">
+                                <a href="{{ route('admin.agent.approved') }}" class="nav-link">
                                     <i class="menu-icon las la-dot-circle"></i>
                                     <span class="menu-title">@lang('Approved')</span>
                                 </a>
                             </li>
 
-                            <li class="sidebar-menu-item {{ menuActive('user.donor.pending') }} ">
-                                <a href="{{ route('user.donor.pending') }}" class="nav-link">
+                            <li class="sidebar-menu-item {{ menuActive('admin.project.pending') }} ">
+                                <a href="{{ route('admin.agent.pending') }}" class="nav-link">
                                     <i class="menu-icon las la-dot-circle"></i>
                                     <span class="menu-title">@lang('Pending')</span>
-                                    @if ($pending_donor_count)
+                                    @if ($pending_agent_count)
                                         <span
-                                            class="menu-badge pill bg--primary ml-auto">{{ $pending_donor_count }}</span>
+                                            class="menu-badge pill bg--primary ml-auto">{{ $pending_agent_count }}</span>
                                     @endif
                                 </a>
                             </li>
 
-                            <li class="sidebar-menu-item {{ menuActive('user.donor.banned') }} ">
-                                <a href="{{ route('user.donor.banned') }}" class="nav-link">
+                            <li class="sidebar-menu-item {{ menuActive('admin.project.index') }} ">
+                                <a href="{{ route('admin.project.index') }}" class="nav-link">
                                     <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title">@lang('Banned')</span>
-                                </a>
-                            </li>
-
-                            <li class="sidebar-menu-item {{ menuActive('user.donor.index') }} ">
-                                <a href="{{ route('user.donor.index') }}" class="nav-link">
-                                    <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title">@lang('Registered Students')</span>
-                                </a>
-                            </li>
-
-                        </ul>
-                    </div>
-                </li>
-
-                <li class="sidebar-menu-item sidebar-dropdown">
-                    <a href="javascript:void(0)" class="{{ menuActive('user.agent*', 3) }}">
-                        <i class="menu-icon las la-user"></i>
-                        <span class="menu-title">@lang('Manage Agent') </span>
-                    </a>
-                    <div class="sidebar-submenu {{ menuActive('user.agent*', 2) }} ">
-                        <ul>
-                            <li class="sidebar-menu-item {{ menuActive('user.agent.index') }} ">
-                                <a href="{{ route('user.agent.index') }}" class="nav-link">
-                                    <i class="menu-icon las la-dot-circle"></i>
-                                    <span class="menu-title">@lang('Registered Agents')</span>
+                                    <span class="menu-title">@lang('All Project')</span>
                                 </a>
                             </li>
                         </ul>

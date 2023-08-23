@@ -113,9 +113,6 @@
                                         @empty
                                         @endforelse
 
-
-
-
                                         <div class="media media-chat">
                                             <img class="avatar"
                                                 src="https://img.icons8.com/color/36/000000/administrator-male.png"
